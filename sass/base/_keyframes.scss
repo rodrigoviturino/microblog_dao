@@ -1,0 +1,77 @@
+
+#btn-banner{
+    display: inline-block;
+    position: relative;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 30px;
+    transition: all 0.6s;
+    background-color: #d31d48;
+
+    @include device(s) {
+      padding: 20px 30px;
+      margin: 15px auto;
+  }
+
+    &:hover {
+        background-color: #ff4571;
+        transition: all 0.6s;
+    }
+  }
+
+  #btn-banner::before, #btn-banner::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+  
+  span::before, span::after{
+    content:"";
+    width:2px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+  }
+  #btn-banner:hover::before, #btn-banner:hover::after{
+    width: 100%;
+  }
+  #btn-banner:hover span::before, #btn-banner:hover span::after{
+    height: 100%;
+  }
+/*----- button 1 -----*/
+.intro__block-title .btn::before, .intro__block-title .btn::after{
+    transition-delay: 0.2s;
+  }
+  .intro__block-title .btn span::before, .intro__block-title .btn span::after{
+    transition-delay: 0s;
+  }
+  .intro__block-title .btn::before{
+    right: 0;
+    top: 0;
+  }
+  .intro__block-title .btn::after{
+    left: 0;
+    bottom: 0;
+  }
+  .intro__block-title .btn span::before{
+    left: 0;
+    top: 0;
+  }
+  .intro__block-title .btn span::after{
+    right: 0;
+    bottom: 0;
+  }
+  .intro__block-title .btn:hover::before, .intro__block-title .btn:hover::after{
+    transition-delay: 0s;
+  }
+  .intro__block-title .btn:hover span::before, .intro__block-title .btn:hover span::after{
+    transition-delay: 0.2s;
+  }
+
+  /*************************/

@@ -1,0 +1,234 @@
+/* Banner Home */
+.banner-home {
+    background-image: url('./assets/img/banner-home.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 520px;
+    width: 100%;
+    display: flex;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+
+
+        &__block-title {
+            text-align: right;
+            align-items: flex-end;
+            max-width: 560px;
+
+            .title {
+                font-weight: 300;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                text-align: right;
+                line-height:1.2;
+                color: #272B2F;
+                @include type-7(50);
+            }
+
+            .text {
+                text-align: right;
+                line-height: 30px;
+                margin-bottom: 18px;
+                color: #5f5f60;
+                @include type-7(16);
+            }
+
+            .btn {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 700;
+                border: solid 2px #757575;
+                padding: 13px 25px;
+                color: #818181;
+                display: inline-block;
+                transition: all 0.4s;
+                @include type-7(16);
+
+                &:hover {
+                    transition: all 0.5s;
+                    border: solid 2px #4a4a4a;
+                    background-color: rgba(197, 197, 197, 0.192);
+                    padding: 13px 20px;
+                }
+            }
+        }
+    }
+}
+/* end Banner Home */
+
+/* Banner Interno */
+.banner-interno {
+    background-image: url('./assets/img/banner-interno.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(25%);
+    height: 300px;
+    width: 100%;
+    display: flex;
+
+    &__block-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px rgb(0, 0, 0);
+            @include type-7(50);
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px black; 
+            @include type-7(20);
+        }
+
+    }
+}
+/* end Banner Interno */
+
+
+/* Page Internal */
+.page-internal {
+
+    &__block-title {
+        margin: 40px 0;
+        h2 {
+            color: #222;
+            font-weight: 600;
+            text-align: left;
+            margin-bottom: 20px;
+            @include type-6(40);
+        }
+
+        h3 {
+            text-align: left;
+            color: #222;
+            font-weight: 500;
+            @include type-6(30);
+        }
+    }
+
+    p {
+        color: #4a4a4a;
+        line-height: 25px;
+        margin: 5px 0;
+        @include type-5(18);
+    }
+}
+/* end Page Internal */
+
+/* Cards Posts */
+.cards-posts {
+    padding: 100px 0;
+
+    .block-title {
+        text-align: center;
+        
+        h2 {
+            color: #272B2F;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            @include type-7(30);
+        }
+
+        p {
+            color:#5f5f60;
+            @include type-7(16);
+        }
+    }
+
+    /* Item */
+    &__item {
+        padding: 80px 0;
+        transition: all 0.7s;
+
+        article {
+
+            figure {
+
+                img {
+                    transition: all 0.7s;
+                    &:hover {
+                        transition: all 0.7s;
+                        opacity: 0.8;
+                    }
+                }
+            }
+                    
+                
+
+            /* Info Post */
+            .wrapper {
+                
+                .info {
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                    @include type-7(17);
+
+                    .title-post {
+                        color: #4a4a4a;
+                        font-weight: 700;
+                    }
+
+                    .separator {
+                        color: #4a4a4a;
+                        display: inline-block;
+                        margin: 0 5px;
+                        width: 18px;
+                        height: 1px;
+                        position: relative;
+                        top: -4px;
+                        background-color: #5f5f60;
+                        font-weight: 700;
+                    }
+
+                    .date {
+                        font-style: italic;
+                        font-weight: 500;
+                    }
+                }
+
+                .text {
+                    color: #272B2F;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    line-height: 1.3;
+                    @include type-7(18);
+                }
+
+                button {
+                    padding: 5px 12px;
+                    background-color: transparent;
+                    border: solid 1px #272B2F;
+                    color: #272B2F;
+                    cursor: pointer;
+                    transition: all 0.7s;
+                    @include type-7(17);
+
+                    &:hover {
+                        transition: all 0.7s;
+                        color: #444;
+                        background-color: #adadad62;
+                    }
+                }
+            }
+            /* end Info Post */
+            
+        }
+    }
+    /* end Item */
+
+}
+/* end Cards Posts */

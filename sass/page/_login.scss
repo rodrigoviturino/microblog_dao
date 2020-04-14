@@ -1,0 +1,136 @@
+.login {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__column-left {
+        background-image: url('./assets/img/bg-login.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 2;
+        flex-direction: column;
+
+        .logo {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 7px;
+            transition: all 0.5s;
+            @include type-6(24);
+
+            &:hover {
+                transition: all 0.7s;
+                opacity: 0.9;
+                color: rgb(204, 204, 204);
+            }
+
+        }
+
+        .page-initial {
+            cursor: pointer;
+            margin-top: 20px;
+            color: #fff;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            text-decoration: none;
+            transition: all 0.7s;
+            @include type-7(16);
+
+            &:hover {
+                transition: all 0.7s;
+                text-decoration: underline;
+            }
+
+            i {
+                position: relative;
+                -webkit-animation: mymove 2s infinite; /* Safari 4.0 - 8.0 */
+                animation: mymove 1.5s infinite;
+                text-shadow: 1px 1px 4px #b9f072;
+            }
+        }
+    }
+
+    &__column-right {
+        padding: 250px 100px 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex: 1;
+
+        .title {
+            letter-spacing: 0.7px;
+            font-weight: 700;
+            color: #4a4a4a;
+            @include type-6(20);
+
+            &:after {
+                content: '';
+                display: block;
+                margin: 20px auto 30px 0px;
+                width: 50px;
+                height: 1px;
+                background-color: #4a4a4a;
+            }
+        }
+        
+        .form {
+            width: 100%;
+
+            input {
+                display: block;
+                width: 100%;
+                border: none;
+                border-bottom: solid 1px rgba(51, 51, 51, 0.267);
+                font-weight: 300;
+                letter-spacing: 1.3px;
+                margin-bottom: 25px;
+                padding: 10px 0 ;
+                @include type-7(16);
+            }
+
+            .password {
+                text-decoration: none;
+                color: #4a4a4a;
+                display: inline-block;
+                transition: all 0.7s;
+                @include type-7(16);
+
+                &:hover {
+                    transition: all 0.7s;
+                    opacity: 0.7;
+                }
+            }
+
+            button {
+                display: block;
+                border: solid 1px #4a4a4a;
+                background-color: #4a4a4a;
+                color: #fff;
+                margin-top: 10px;
+                padding: 10px 35px;
+                font-weight: 500;
+                transition: all 0.9s;
+                cursor: pointer;
+                @include type-7(16);
+
+                &:hover {
+                    transition: all 0.8s;
+                    color: #4a4a4a;
+                    padding: 10px 25px;
+                    background-color: transparent;
+                    border: solid 1px #4a4a4a;
+                }
+            }
+        }
+
+        
+    }
+
+}

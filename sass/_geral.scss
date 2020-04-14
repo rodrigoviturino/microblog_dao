@@ -1,0 +1,66 @@
+/* STYLE GERAL */
+
+body {
+    // height: 2000px;
+    position: relative;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.ativo {
+    display: none !important;
+    transition: all 0.7s;
+}
+
+.modal_ativo {
+    display: block;
+}
+/* END STYLE GERAL */
+
+.ativarMenu {
+    left: 0px !important;
+    z-index: 11;
+    background-color: #E9204F;
+    transition: all 0.7s;
+    width: 100% !important;
+
+    i {
+        transform: rotate(175deg);
+        transition: all 2.5s;
+        color: #4a4a4e;
+    }
+
+}
+
+.js-tabcontent section{
+    display: none;
+}
+
+.js-tabcontent section.activeContent {
+    display: block;
+    animation: show .5s forwards;
+}
+
+.headerMenuFixed {
+    position: fixed;
+    width: 100%;
+    padding: 13px 0;
+    z-index: 11;
+    background-color: #3a3a3a;
+}
+
+
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 3px;}
+  }
+  
+  /* Standard syntax */
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 3px;}
+  }

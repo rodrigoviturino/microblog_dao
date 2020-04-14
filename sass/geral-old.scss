@@ -1,0 +1,17 @@
+body {
+    background-color: $text-title;
+    border: solid 10px $title-main;
+    color: $title-main;
+    @include device(s){
+        border: none;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+// p {
+//     @include type-1(18);
+// }
